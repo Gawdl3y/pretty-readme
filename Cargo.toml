@@ -1,0 +1,23 @@
+[package]
+name = "pretty-readme"
+version = "0.1.0"
+description = "Macro to make using a README.md file as the root module documentation easy, seamless, and testable"
+authors = ["Schuyler Cebulskie <me@gawdl3y.dev>"]
+keywords = ["docs", "documentation", "readme"]
+categories = [
+	"development-tools::build-utils",
+	"development-tools::testing",
+	"rust-patterns",
+]
+license = "LGPL-3.0-or-later"
+repository = "https://github.com/Gawdl3y/pretty-readme-rs"
+edition = "2021"
+
+[dependencies]
+proc-macro2 = "1.0.81"
+quote = "1.0.36"
+regex = "1.10.4"
+syn = "2.0.60"
+
+[lib]
+proc-macro = true
